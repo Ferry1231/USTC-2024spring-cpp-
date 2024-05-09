@@ -1,4 +1,4 @@
-#include"LAB_2.h"
+#include"./LAB_2.h"
 #include<iostream>
 #include<cmath>
 #include<string>

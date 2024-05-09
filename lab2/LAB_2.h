@@ -173,7 +173,7 @@ class GaussColumn{
     }
     void solve(){
         double h=1.00/n;
-        Matrix=createMatrix(epi,a,n);
+        //Matrix=createMatrix(epi,a,n);
         result=new double[n];
         real=new double[n];
         for(int i=1;i<=n;i++){

@@ -1,5 +1,5 @@
-#include"LAB_3.h"
-#include"LAB_2.h"
+#include"./LAB_3.h"
+#include"./LAB_2.h"
 #include<iostream>
 #include<cmath>
 #include<cstdlib>
