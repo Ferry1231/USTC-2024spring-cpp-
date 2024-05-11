@@ -1,7 +1,7 @@
 #ifndef LAB_3_H
 #define LAB_3_H
 
-#include"LAB_2.h"
+#include"../lab2/LAB_2.h"
 #include<iostream>
 #include<cmath>
 #include<string>
@@ -82,9 +82,9 @@ class inversePower{
         }
         double* y=solveL(y_first);
         double* x=solveU(y);
-        printMatrix(U,n);
+        //printMatrix(U,n);
         cout<<endl;
-        printMatrix(L,n);
+        //printMatrix(L,n);
         cout<<endl;
         return x;
     }

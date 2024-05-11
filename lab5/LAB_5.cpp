@@ -1,5 +1,5 @@
-#include"./LAB_3.h"
-#include"./LAB_2.h"
+#include"../lab3/LAB_3.h"
+#include"../lab2/LAB_2.h"
 #include<iostream>
 #include<cmath>
 #include<cstdlib>
@@ -20,7 +20,7 @@ class M_spline{
     double* mu;
     double** yCoefs;
     double** matrix;
-    void readData(string filename){
+    void readData(string filename){//ok
         ifstream file(filename);
         string line;
         n=0;
@@ -122,8 +122,20 @@ class M_spline{
         for(int i=0;i<n;i++){
             for(int j=0;j<4;j++){
                 file<<yCoefs[i][j];
+                file<<" ";
             }
             file<<"\n";
         }
     }
 };
+
+int main(){
+    M_spline test;
+    test.solve("point2.txt");
+    test.outputData("result2.txt");
+    //printList(test.hList,test.n);
+    //printList(test.lambda,test.n-1);
+    //printList(test.MList,test.n+1);
+    //printList(test.dList,test.n-1);
+    return 0;
+}
